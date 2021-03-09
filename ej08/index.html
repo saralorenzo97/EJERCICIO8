@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino de Santiago - Servicio al Caminante</title>
+</head>
+<style>
+ *{
+     margin:0px;
+     padding: 0px;
+  }
+  #portada{
+      background: url(img/pexels-vanessa-garcia-6324243.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+  }
+  header{
+      width: 100%;
+      height: 75px;
+   /*border: 1px solid blue;*/
+   background-color: rgba(255,255,255,0.60);
+  }
+  nav{
+      display: inline-block;
+      vertical-align: top;
+     /* border: 1px solid blue;*/
+      height: 40px;
+      width: 70%;
+      padding-top: 25px;
+      text-align: center;
+  }
+  nav a{
+      text-decoration: none;
+      margin-right: 20px;
+      color:#707070;
+      font-weight: bold;
+  }
+  #logo{
+    display: inline-block;
+      vertical-align: top;
+    width: 90px;
+    height: 65px;
+    padding-top: 5px;
+    padding-left: 10px;
+   /* border: 1px solid blue;*/
+  }
+  #logo img{
+      height: 100%;
+  }
+  #telefono{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 65px;
+    color:#707070;
+   /* border: 1px solid blue;*/
+  }
+  #telefono img{
+      height: 50%;
+      padding-top: 18px;
+      padding-right: 10px;
+  }
+#telefono img, #telefono b{
+display: inline-block;
+vertical-align: top;
+}
+#telefono b{
+padding-top: 25px;
+}
+.contenido{
+    width: 100%;
+    height: 80%;
+    padding-top: 10%;
+} 
+ .cajaIzq{
+     width: 67%;
+     height: 80%;
+     display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid #0000ff;*/
+    text-align: right;
+    position: relative;
+ }
+ .cajaDer{
+     width: 25%;
+     height: 80%;
+     display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid blue;*/
+    margin-left: 5%;
+    /*text-align: right;*/
+ }
+ .titulo{
+     position: absolute;
+     top:0px;
+     right: 0px;
+     text-align: center;
+     width: 225px;
+     padding: 20px;
+     background-color: rgba(255,255,255,0.60);
+     border-radius: 20px;
+     color:#707070;
+ }
+
+ /*  Cajas Servicios */
+
+ .servicios{
+     width: 80%;
+     padding: 10px;
+     background-color: rgba(255,255,255,0.60);
+     border-radius: 20px;
+     color:#707070;
+     margin-bottom: 20px;
+ }
+ .servicios img{
+     height: 50px;
+     display: inline-block;
+     vertical-align: top;
+ }
+ .servicios b{
+display: inline-block;
+vertical-align: top;
+padding-top: 10px;
+width: 100px;
+ }
+
+</style>
+<body>
+    <section id="portada">
+        <header>
+       <div id="logo">
+        <img src="icons/logo_santiago.png" alt="">
+       </div>
+       <nav>
+         <a href="#">Inicio</a>
+         <a href="#">Precios </a>
+         <a href="#">Sobre Nosotros</a>
+       </nav>
+       <div id="telefono">
+            <img src="icons/whatsapp (1).png" alt="">
+            <b>665893555</b>
+        </div>
+        </header>
+
+        <div class="contenido">
+         
+            <div class="cajaIzq">
+               <div class="titulo">
+                   <h1>Disfruta del Camino sin sobresaltos y con total seguridad</h1>
+               </div>
+            </div>
+
+            <div class="cajaDer">
+
+                <div class="servicios">
+                  <img src="icons/mochila.png" alt="">
+                  <b>Transporte de Mochilas</b>
+                </div>
+                <div class="servicios">
+                    <img src="icons/llamada-de-emergencia.png" alt="">
+                    <b>telefono de Emergencias</b>
+                </div>
+                <div class="servicios">
+                    <img src="icons/telefono-inteligente.png" alt="">
+                    <b>APP de Geolocalización</b>
+                </div>      
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <section id="precios">
+        
+
+    </section>
+
+</body>
+</html>
