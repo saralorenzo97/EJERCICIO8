@@ -12,24 +12,47 @@
     margin: 0px;
     padding: 0px;
 }
-#portada{ border: blue;
+
+#portada{ 
+    background: url(img2/fondo2.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
-#header{
+header{
     width: 100%;
     height: 75px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: rgba(255,255,255,0.60);
+}
+
+nav{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    width: 75%;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-weight: bold;
 }
 
 #logo{
     display: inline-block;
     vertical-align: top;
     width: 120px;
-    height: 65px;
+    height: 70px;
     padding-top: 5px;
     padding-left: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #logo img{
@@ -41,7 +64,7 @@
     vertical-align: top;
     width: 150px;
     height: 65px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 #tlf img{
@@ -49,26 +72,128 @@
     padding-top: 18px;
     padding-right: 10px;
 }
+
+#tlf img, #tlf b{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tlf b{
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.contenido{
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+}
+
+.cajaizq{
+    margin-top: 0px;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    display: inline-block;
+    vertical-align: right;
+    border: 1px solid blue;
+}
+
+.cajader{
+    margin-top: 0px;
+    width: 45%;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    border: 1px solid blue;
+}
+
+.titulo{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    text-align: center;
+    width: 225px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.60);
+    border-radius: 20px;
+    color: black;
+}
+
+/*Cajas servicios*/
+
+.servicios{
+    width: 45%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.60);
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.servicios img{
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.servicios b{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    width: 100px;
+}
 </style>
 <body>
    
     <section id="portada">
         <header>
-        <div id="logo">
-            <img src="icons2/logo.png" alt="">
-        </div>
+            <div id="logo">
+                <img src="icons2/logo.png" alt="">
+            </div>
 
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Carta</a>
-            <a href="#">Reservas</a>
-        </nav>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Carta</a>
+                <a href="#">Reservas</a>
+            </nav>
 
-        <div id="tlf">
-            <img src="icons/wts.png" alt="">
-            <b>663959342</b>
-        </div>
-    </header>
+            <div id="tlf">
+                <img src="icons/wts.png" alt="">
+                <b>663959342</b>
+            </div>
+        </header>
+
+        <div class="contenido">
+            <div class="cajaizq">
+                <div class="titulo">
+                <h1>Unas recetas muy extravagantes te esperan para disfrutar de una buena comida</h1>
+                </div>
+            </div>
+
+            <div class="cajader">
+
+                <div class="servicios">
+                    <img src="icons2/plato1.png" alt="">
+                    <b>Primeros platos</b>
+                </div>
+
+                <div class="servicios">
+                    <img src="icons2/plato2.png" alt="">
+                    <b>Segundos platos</b>
+                </div>
+
+                <div class="servicios">
+                    <img src="icons2/postre.png" alt="">
+                    <b>Postres</b>
+                </div>
+
+            </div>
+
+
+    </div>
     </section>
     
 
